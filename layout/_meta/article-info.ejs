@@ -1,9 +1,8 @@
 <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <i class="fa-regular fa-calendar-days"></i>&nbsp;
         <span class="desktop"><%= date(articleObject.date, is_post() ? `${config.date_format} ${config.time_format}` : `${config.date_format}`).replace(" 00:00:00", "").replace(":00", "") %></span>
         <span class="mobile"><%= date(articleObject.date, is_post() ? `${config.date_format} ${config.time_format}` : `${config.date_format}`).replace(" 00:00:00", "").replace(":00", "") %></span>
-        <span class="hover-info"><%= __("create_time") %></span>
     </span>
     <% if (articleObject.updated && articleObject.updated !== articleObject.date) { %>
         <span class="article-date article-meta-item">
