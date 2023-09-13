@@ -12,10 +12,6 @@
             <i class="fa-regular fa-expand"></i>
         </li>
 
-        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
-            <i class="fa-regular fa-moon"></i>
-        </li>
-
         <!-- rss -->
         <% if (theme.plugins.feed.enable && config.feed) { %>
             <li class="right-bottom-tools rss flex justify-center items-center">
@@ -40,8 +36,10 @@
     </ul>
 
     <ul class="visible-tools-list">
-        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
-            <i class="fa-regular fa-cog slow-spin"></i>
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <div class="slow-spin">
+                <i class="fa-regular fa-moon"></i>
+            </div>
         </li>
         <% if (theme.global.scroll_progress.percentage === true) { %>
             <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
