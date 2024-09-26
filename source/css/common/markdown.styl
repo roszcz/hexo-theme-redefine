@@ -95,7 +95,7 @@
     font-family $english-font-family, $chinese-font-family, sans-serif
     color var(--second-text-color)
     line-height $default-line-height
-    margin-bottom 1rem !important
+    margin-bottom 0px !important
 
     +redefine-tablet()
       line-height: $default-line-height * 0.96
@@ -103,7 +103,6 @@
   h1, .h1
     font-size 3.2rem
     font-weight 700
-    border-bottom solid 2px var(--fourth-text-color)
     margin-top 5rem
 
     +redefine-tablet()
@@ -111,18 +110,17 @@
 
   h2, .h2
     font-size 2.5rem
-    font-weight 700
+    font-weight 300
     padding 3px 0
-    border-bottom solid 2px var(--fourth-text-color)
-    margin-top 4rem
+    margin-top 1rem
 
     +redefine-tablet()
       font-size 1.6rem
 
   h3, .h3
     font-size 1.8rem
-    font-weight 600
-    margin-top 2.8rem
+    font-weight 300
+    margin-top 1rem
 
     +redefine-tablet()
       font-size 1.5rem
@@ -156,13 +154,13 @@
   img
     box-sizing border-box
     border-radius $usr-img-border-radius
-    max-width 100%
+    max-width 110%
     cursor zoom-in
     display block
     transition-t('padding, margin', '0, 0', '0.2, 0.2', 'linear, linear')
 
     if (hexo-config('articles.style.image_alignment') == 'center')
-      margin 1rem auto 1rem
+      margin 0rem auto 1rem
     else
       margin 1rem 0 1rem
 

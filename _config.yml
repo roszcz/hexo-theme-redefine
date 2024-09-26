@@ -100,7 +100,7 @@ home_banner:
   # Whether to enable home banner
   enable: true
   # style of home banner
-  style: fixed # static or fixed
+  style: static # static or fixed
   # Home banner image
   image: 
     light: /images/wallhaven-wqery6-light.webp # light mode
@@ -169,9 +169,9 @@ navbar:
     transparency: 35 #percent (10-99)
   # Navbar links
   links:
-    Home: 
-      path: / 
-      icon: fa-regular fa-house # can be empty
+    # Home: 
+    #   path: / 
+    #   icon: fa-regular fa-house # can be empty
     # Archives: 
     #   path: /archives 
     #   icon: fa-regular fa-archive # can be empty

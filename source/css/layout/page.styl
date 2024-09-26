@@ -11,7 +11,7 @@
     padding-right 0 !important
 
   .main-content-container
-    padding-top $navbar-height
+    padding-top 0px
     position relative
 
     .navbar-shrink &
@@ -30,14 +30,14 @@
       padding-top: $navbar-height * 0.8
 
     .main-content-header
-      position fixed
+      position static
       top 0
       right 0
       width 100%
       height $navbar-height
       z-index $z-index-5
       box-sizing border-box
-      transition-t('transform, padding-left, height', '0, 0, 0', '0.3, 0.2, 0.2', 'ease-out, linear, ease')
+      transition-t('transform, padding-left, height', '0, 0, 0', '0.3, 0.8, 0.5', 'ease-out, linear, ease')
 
       &.hide
         transform translateY(-105%)
@@ -63,7 +63,7 @@
       width 100%
       display flex
       justify-content center
-      padding $spacing-unit 0
+      padding 13px
 
       +redefine-tablet()
         padding ($spacing-unit * 0.8) 0
